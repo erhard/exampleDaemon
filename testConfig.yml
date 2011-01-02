@@ -1,0 +1,21 @@
+development:
+  urls:
+    - 'http://localhost:3000/admin/async_jobs/next'
+  logFile:
+    - 'SystemOutDev.log'
+  pidFile:
+    - 'test.pid'
+test:
+  urls:
+    - 'http://payload-server.de/app1/admin/async_jobs/next'
+  logFile:
+    - 'SystemOutTest.log'
+  pidFile:
+    - 'test.pid'
+prod:
+  urls:
+    - 'http://test-server.de/app2/admin/async_jobs/next'
+  logFile:
+    - 'SystemOutProd.log'
+  pidFile:
+    - 'test.pid'
